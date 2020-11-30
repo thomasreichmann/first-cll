@@ -1,38 +1,30 @@
 <mat-toolbar class="mat-elevation-z2">
-  <mat-toolbar-row class="toolbar">
-    <span class="example-spacer"></span>
+	<mat-toolbar-row class="toolbar">
+		<span class="example-spacer"></span>
 
-    <a mat-button class="name-button">CLL</a>
+		<a mat-button class="name-button">CLL</a>
 
-    <img
-      class="img-responsive"
-      src="https://static.wixstatic.com/media/52cb94_6ab4122932cb475caf51eb4e03c090dc~mv2.png"
-    />
+		<img
+			class="img-responsive"
+			src="https://static.wixstatic.com/media/52cb94_6ab4122932cb475caf51eb4e03c090dc~mv2.png"
+		/>
 
-    <a mat-button class="nav-button" routerLink="/test">Comunidade</a>
+		<span id="navSpan" *ngFor="let navButton of navButtons; last as isLast">
+			<a mat-button class="nav-button" [routerLink]="navButton.route">
+				{{ navButton.title }}
+			</a>
 
-    <div class="div-divider"></div>
+			<div *ngIf="!isLast" class="div-divider"></div>
+		</span>
 
-    <a mat-button class="nav-button" routerLink="/test">Cursos</a>
+		<span class="example-spacer"></span>
 
-    <div class="div-divider"></div>
+		<button mat-icon-button class="login-button" inline="true">
+			<mat-icon class="login-button" color="primary"
+				>account_circle</mat-icon
+			>
+		</button>
 
-    <a mat-button class="nav-button" routerLink="/test">Artigos</a>
-
-    <div class="div-divider"></div>
-
-    <a mat-button class="nav-button" routerLink="/test">O cll</a>
-
-    <div class="div-divider"></div>
-
-    <a mat-button class="nav-button" routerLink="/test">Contato</a>
-
-    <span class="example-spacer"></span>
-
-    <button mat-icon-button class="login-button" inline="true">
-      <mat-icon class="login-button" color="primary">account_circle</mat-icon>
-    </button>
-
-    <span class="example-spacer"></span>
-  </mat-toolbar-row>
+		<span class="example-spacer"></span>
+	</mat-toolbar-row>
 </mat-toolbar>

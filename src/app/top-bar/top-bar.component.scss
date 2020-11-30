@@ -1,62 +1,65 @@
 .img-responsive {
-  height: auto;
-  width: auto;
-  max-height: 66px;
-  max-width: 250px;
+	height: auto;
+	width: auto;
+	max-height: 66px;
+	max-width: 250px;
 }
 
 .toolbar {
-  height: 77px;
-}
-
-.divider {
-  height: 65%;
-}
-
-.div-divider {
-  transform-origin: center 3px;
-  height: 50px;
-  width: 6px;
-  box-sizing: border-box;
-  border-top: 50px solid rgba(229, 105, 16, 1);
+	height: 77px;
 }
 
 [mat-button] {
-  transition: background 0.4s cubic-bezier(0.25, 0.8, 0.25, 1),
-    box-shadow 280ms cubic-bezier(0.4, 0, 0.2, 1);
+	transition: background 0.4s cubic-bezier(0.25, 0.8, 0.25, 1),
+		box-shadow 280ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 [mat-button]:hover {
-  background-color: #e56910;
+	background-color: #e56910;
 }
 
 .login-button {
-  zoom: 1.25;
+	zoom: 1.25;
+}
+
+#menu ul li {
+	list-style: none;
+	align-items: center;
+}
+
+.div-divider {
+	display: inline-block;
+	transform-origin: top 3px;
+	vertical-align: middle;
+	height: 50px;
+	width: 6px;
+	box-sizing: border-box;
+	border-top: 50px solid rgba(229, 105, 16, 1);
 }
 
 .nav-button {
-  height: auto;
-  width: 15%;
-  padding: 16px;
-  margin: 16px;
+	height: auto;
+	padding: 16px;
+	margin: 16px;
 
-  font-size: 17px;
-  font-size: 1vw;
-  font-family: "lulo";
+	font-size: 17px;
+	font-size: 1vw;
+	font-family: "lulo";
 }
 
 .name-button {
-  font-family: "lulo";
-  font-size: 40px;
-  padding: 16px 36px;
-  margin: 16px;
-  background-color: #e56910;
+	font-family: "lulo";
+	font-size: 40px;
+	font-size: 2.7vw;
+	padding: 16px;
+	margin: 16px;
+	background-color: #e56910;
 }
 
 .name-button:hover {
-  background-color: rgba($color: #e56910, $alpha: 0.25);
+	background-color: rgba($color: #e56910, $alpha: 0.25);
 }
 
 .example-spacer {
-  flex: 1 1 auto;
+	flex: 1 1 auto;
 }
