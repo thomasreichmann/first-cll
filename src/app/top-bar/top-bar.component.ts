@@ -11,11 +11,11 @@ export class TopBarComponent implements OnInit {
 
 	// Definimos todos os botoes de navegacao no header do site
 	navButtons: NavButton[] = [
-		{ title: 'Comunidade', route: '/comunidade' },
-		{ title: 'Cursos', route: '/cursos' },
-		{ title: 'Artigos', route: '/artigos' },
-		{ title: 'O Cll', route: '/apresentacao' },
-		{ title: 'Contato', route: '/contato' },
+		{ title: 'Comunidade', route: 'comunidade' },
+		{ title: 'Cursos', route: 'cursos' },
+		{ title: 'Artigos', route: 'artigos' },
+		{ title: 'O Cll', route: 'apresentacao' },
+		{ title: 'Contato', route: 'contato' },
 	];
 
 	ngOnInit(): void {}
