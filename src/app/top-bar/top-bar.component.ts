@@ -15,7 +15,7 @@ export class TopBarComponent implements OnInit {
 		{ title: 'Cursos', route: '/cursos' },
 		{ title: 'Artigos', route: '/artigos' },
 		{ title: 'O Cll', route: '/apresentacao' },
-		{ title: 'Contato', route: '/Contato' },
+		{ title: 'Contato', route: '/contato' },
 	];
 
 	ngOnInit(): void {}
