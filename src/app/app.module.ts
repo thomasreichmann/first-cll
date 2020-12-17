@@ -12,25 +12,27 @@ import { CursosComponent } from './cursos/cursos.component';
 import { ArtigosComponent } from './artigos/artigos.component';
 import { ApresentacaoComponent } from './apresentacao/apresentacao.component';
 import { ContatoComponent } from './contato/contato.component';
+import { IvyCarouselModule } from 'angular-responsive-carousel';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    TopBarComponent,
-    HomePageComponent,
-    ComunidadeComponent,
-    CursosComponent,
-    ArtigosComponent,
-    ApresentacaoComponent,
-    ContatoComponent
-  ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    MaterialModule,
-    BrowserAnimationsModule
-  ],
-  providers: [],
-  bootstrap: [AppComponent]
+	declarations: [
+		AppComponent,
+		TopBarComponent,
+		HomePageComponent,
+		ComunidadeComponent,
+		CursosComponent,
+		ArtigosComponent,
+		ApresentacaoComponent,
+		ContatoComponent,
+	],
+	imports: [
+		BrowserModule,
+		AppRoutingModule,
+		MaterialModule,
+		BrowserAnimationsModule,
+		IvyCarouselModule,
+	],
+	providers: [],
+	bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
