@@ -1,0 +1,33 @@
+.center-div {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.bold-large {
+	font-size: 74px;
+	font-weight: bold;
+}
+
+.normal-medium {
+	font-size: 54px;
+}
+
+.normal-small {
+	font-size: 33px;
+}
+
+.grid-container {
+	display: grid;
+	overflow: hidden;
+	margin: 0 auto;
+	margin-bottom: 250px;
+	height: 850px;
+	grid-template-columns: 50% 50%;
+	grid-template-rows: 50% 50%;
+	width: 80%;
+}
+
+.inner-spacing {
+	margin: 25px 0 0 130px;
+}
