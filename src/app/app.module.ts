@@ -13,6 +13,7 @@ import { ArtigosComponent } from './artigos/artigos.component';
 import { ApresentacaoComponent } from './apresentacao/apresentacao.component';
 import { ContatoComponent } from './contato/contato.component';
 import { IvyCarouselModule } from 'angular-responsive-carousel';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
 	declarations: [
@@ -24,6 +25,7 @@ import { IvyCarouselModule } from 'angular-responsive-carousel';
 		ArtigosComponent,
 		ApresentacaoComponent,
 		ContatoComponent,
+		FooterComponent,
 	],
 	imports: [
 		BrowserModule,

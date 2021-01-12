@@ -1,6 +1,11 @@
-<div>
-	<app-top-bar></app-top-bar>
+<div style="position: relative; min-height: 100vh">
+	<div>
+		<app-top-bar></app-top-bar>
+		<div style="height: 77px"></div>
+	</div>
+
+	<router-outlet></router-outlet>
+
+	<app-footer></app-footer>
 	<div style="height: 77px"></div>
 </div>
-
-<router-outlet></router-outlet>
