@@ -28,10 +28,6 @@ const routes: Routes = [
 		path: 'apresentacao',
 		component: ApresentacaoComponent,
 	},
-	{
-		path: 'contato',
-		component: ContatoComponent,
-	},
 ];
 
 @NgModule({
