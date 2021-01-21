@@ -6,6 +6,7 @@ import { ComunidadeComponent } from './comunidade/comunidade.component';
 import { ContatoComponent } from './contato/contato.component';
 import { CursosComponent } from './cursos/cursos.component';
 import { HomePageComponent } from './home-page/home-page.component';
+import { LoginComponent } from './login/login.component';
 
 const routes: Routes = [
 	{
@@ -27,6 +28,10 @@ const routes: Routes = [
 	{
 		path: 'apresentacao',
 		component: ApresentacaoComponent,
+	},
+	{
+		path: 'login',
+		component: LoginComponent,
 	},
 ];
 

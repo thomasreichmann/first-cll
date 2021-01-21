@@ -14,6 +14,8 @@ import { ApresentacaoComponent } from './apresentacao/apresentacao.component';
 import { ContatoComponent } from './contato/contato.component';
 import { IvyCarouselModule } from 'angular-responsive-carousel';
 import { FooterComponent } from './footer/footer.component';
+import { LoginComponent } from './login/login.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
 	declarations: [
@@ -26,6 +28,7 @@ import { FooterComponent } from './footer/footer.component';
 		ApresentacaoComponent,
 		ContatoComponent,
 		FooterComponent,
+		LoginComponent,
 	],
 	imports: [
 		BrowserModule,
@@ -33,6 +36,7 @@ import { FooterComponent } from './footer/footer.component';
 		MaterialModule,
 		BrowserAnimationsModule,
 		IvyCarouselModule,
+		ReactiveFormsModule,
 	],
 	providers: [],
 	bootstrap: [AppComponent],
