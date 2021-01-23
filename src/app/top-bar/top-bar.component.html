@@ -24,7 +24,12 @@
 
 		<span class="example-spacer"></span>
 
-		<button mat-icon-button class="login-button" inline="true">
+		<button
+			mat-icon-button
+			class="login-button"
+			inline="true"
+			(click)="openDialog()"
+		>
 			<mat-icon class="login-button" color="primary"
 				>account_circle</mat-icon
 			>

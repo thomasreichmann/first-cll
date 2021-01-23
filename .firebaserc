@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "cll-dev": {
+      "hosting": {
+        "cll-scss": [
+          "cll-dev"
+        ]
+      }
+    }
+  }
+}

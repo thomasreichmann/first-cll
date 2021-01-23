@@ -1,35 +1,5 @@
-<div
-	style="
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		justify-content: center;
-	"
->
-	<form
-		style="display: flex; flex-direction: column"
-		[formGroup]="profileForm"
-		(ngSubmit)="onLogin()"
-	>
-		<mat-form-field>
-			<mat-label>Usuario</mat-label>
-			<input matInput formControlName="username" />
-		</mat-form-field>
-
-		<mat-form-field>
-			<mat-label>Senha</mat-label>
-			<input matInput type="password" formControlName="password" />
-		</mat-form-field>
-
-		<button mat-raised-button>Login</button>
-	</form>
-
-	<button mat-raised-button style="margin-top: 75px" (click)="fetchUser()">
-		Pegar usuario atual
-	</button>
-
-	<div *ngIf="username != ''" style="font-size: 42px">
-		<span>Usuario atual: </span>
-		<p>{{ username }}</p>
-	</div>
+<div>
+	<ngx-auth-firebaseui
+		[providers]="['google', 'github']"
+	></ngx-auth-firebaseui>
 </div>

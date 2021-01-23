@@ -1,1 +1,9 @@
-<p>artigos works!</p>
+<ul>
+	<li class="text" *ngFor="let item of items | async">
+		{{ item.name }}
+	</li>
+</ul>
+
+<div style="width: 800px">
+	<ngx-auth-firebaseui></ngx-auth-firebaseui>
+</div>

@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { MatDialog } from '@angular/material/dialog';
+import { LoginComponent } from '../login/login.component';
 import { NavButton } from './nav-button';
 
 @Component({
@@ -7,7 +9,7 @@ import { NavButton } from './nav-button';
 	styleUrls: ['./top-bar.component.scss'],
 })
 export class TopBarComponent implements OnInit {
-	constructor() {}
+	constructor(public dialog: MatDialog) {}
 
 	// Definimos todos os botoes de navegacao no header do site
 	navButtons: NavButton[] = [
@@ -18,4 +20,8 @@ export class TopBarComponent implements OnInit {
 	];
 
 	ngOnInit(): void {}
+
+	openDialog() {
+		this.dialog.open(LoginComponent);
+	}
 }

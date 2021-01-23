@@ -1,6 +1,13 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
+import { environment } from '../environments/environment';
+
+import { AngularFireModule } from '@angular/fire';
+import { AngularFireAnalyticsModule } from '@angular/fire/analytics';
+import { AngularFirestoreModule } from '@angular/fire/firestore';
+import { NgxAuthFirebaseUIModule } from 'ngx-auth-firebaseui';
+
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { MaterialModule } from './material/material.module';
@@ -16,6 +23,7 @@ import { IvyCarouselModule } from 'angular-responsive-carousel';
 import { FooterComponent } from './footer/footer.component';
 import { LoginComponent } from './login/login.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { env } from 'process';
 
 @NgModule({
 	declarations: [
@@ -32,6 +40,11 @@ import { ReactiveFormsModule } from '@angular/forms';
 	],
 	imports: [
 		BrowserModule,
+		BrowserAnimationsModule,
+		AngularFireModule.initializeApp(environment.firebase),
+		NgxAuthFirebaseUIModule.forRoot(environment.firebase),
+		AngularFireAnalyticsModule,
+		AngularFirestoreModule,
 		AppRoutingModule,
 		MaterialModule,
 		BrowserAnimationsModule,
